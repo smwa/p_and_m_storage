@@ -6,6 +6,10 @@
  * Made By MaterializeCSS.com
  */
 
+.primary-color {
+  color: #000000;
+}
+
 nav ul a,
 nav .brand-logo {
   color: #444;
@@ -20,28 +24,43 @@ p {
 }
 
 .parallax-container {
-  min-height: 380px;
+  min-height: 320px;
   line-height: 0;
   height: auto;
   color: rgba(255,255,255,.9);
 }
-  .parallax-container .section {
-    width: 100%;
-  }
+.parallax-container .section {
+  width: 100%;
+}
 
 @media only screen and (max-width : 992px) {
   .parallax-container .section {
     position: absolute;
-    top: 40%;
   }
   #index-banner .section {
     top: 10%;
+  }
+
+  .parallax-container {
+    min-height: 210px;
+  }
+
+  #index-banner {
+    min-height: 380px;
   }
 }
 
 @media only screen and (max-width : 600px) {
   #index-banner .section {
     top: 0;
+  }
+
+  .parallax-container {
+    min-height: 140px;
+  }
+
+  #index-banner {
+    min-height: 380px;
   }
 }
 
@@ -58,4 +77,9 @@ footer.page-footer {
 
 img.darken {
   filter: brightness(50%);
+}
+
+.parallax > img {
+  width: 100%;
+  height: auto;
 }
