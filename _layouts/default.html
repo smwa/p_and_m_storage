@@ -56,11 +56,11 @@
         {% include picture.html url=site.data.site.logo title='Site logo' %}
         {{ site.data.site.title }}
       </a>
-      <img src="{{ site.data.site.logo | relative_url }}" style="width: 1em; opacity: 0%" title="{{ 'Site generated at ' | append: site.time }}" aria-hidden="true">
       <div class="nav-right">
         {% for navlink in site.data.navigation %}
           <a href="{{ navlink.url }}">{{ navlink.text }}</a>
         {% endfor %}  
+        <img src="{{ site.data.site.logo | relative_url }}" style="width: 1em; opacity: 0%" title="{{ 'Site generated at ' | append: site.time }}" aria-hidden="true">
       </div>
     </div>
     <div class="sections" role="main">
