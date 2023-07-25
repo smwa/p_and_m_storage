@@ -6,5 +6,5 @@
 #   url: "/slideshow/tinyhomes/"
 # - text: Custom
 #   url: "/slideshow/more/"
-- text: '<i data-feather="facebook"></i>Facebook'
+- text: '<i data-feather="facebook"></i>'
   url: "https://www.facebook.com/profile.php?id=100077447217792"
