@@ -54,11 +54,14 @@
     <div class="navigation-bar" role="heading">
       <a href="{{ '/' | relative_url }}">
         {% include picture.html url=site.data.site.logo title='Site logo' %}
+        {{ site.data.site.title }}
       </a>
-      {% for navlink in site.data.navigation %}
+      <img src="{{ site.data.site.logo | relative_url }}" style="width: 1em; opacity: 0%" title="{{ 'Site generated at ' | append: site.time }}" aria-hidden="true">
+      <div class="nav-right">
+        {% for navlink in site.data.navigation %}
           <a href="{{ navlink.url }}">{{ navlink.text }}</a>
-      {% endfor %}
-      <img src="{{ site.data.site.logo | relative_url }}" style="width: 1em; opacity: 0%" title="{{ 'Site generated at ' | append: site.time }}" aria-hidden="true"> </div>
+        {% endfor %}  
+      </div>
     </div>
     <div class="sections" role="main">
       {{ content }}
@@ -91,5 +94,22 @@
         };
       });
     </script>
+
+<!-- Matomo -->
+<script>
+  var _paq = window._paq = window._paq || [];
+  /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
+  _paq.push(['trackPageView']);
+  _paq.push(['enableLinkTracking']);
+  (function() {
+    var u="//mat.mechstack.dev/";
+    _paq.push(['setTrackerUrl', u+'matomo.php']);
+    _paq.push(['setSiteId', '3']);
+    var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+    g.async=true; g.src=u+'matomo.js'; s.parentNode.insertBefore(g,s);
+  })();
+</script>
+<!-- End Matomo Code -->
+
   </body>
 </html>

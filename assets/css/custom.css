@@ -8,11 +8,15 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .sections a {
-    text-decoration: none;
-    border: 1px solid black;
-    border-radius: 3px;
-    padding: 8px;
-    margin: 8px;
+  color: black;
+  text-decoration: none;
+}
+
+.sections > * a {
+  border: 1px solid black;
+  border-radius: 3px;
+  padding: 8px;
+  margin: 8px;
 }
 
 .section-h3 {
@@ -28,6 +32,21 @@ h1, h2, h3, h4, h5, h6 {
     color: white;
     background-color: #12127d;
     border: none;
+}
+
+.section-options a {
+  color: white;
+  text-decoration: none;
+  border: none;
+  background-color: initial;
+  font-weight: 800;
+  font-size: 2rem;
+  padding: 0.2rem;
+  margin: 0;
+}
+
+.section-options > * > img + *::after {
+  opacity: 0.6;
 }
 
 .section-locations a {
@@ -46,6 +65,23 @@ h1, h2, h3, h4, h5, h6 {
   color: #FFFFFF;
   background-color: #12127d;
 }
+
+.nav-right > * {
+  height: 2rem;
+  padding: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  font-size: 1.5rem;
+  font-weight: 500;
+  white-space: nowrap;
+}
+
+.nav-right > * > * {
+  max-height: 100%;
+}
+
 .navigation-bar svg {
     stroke: #FFFFFF;
     stroke-width: 0.08rem;
@@ -55,7 +91,7 @@ h1, h2, h3, h4, h5, h6 {
   height: 6rem;
 }
 
-.navigation-bar > * {
+.navigation-bar > *, .nav-right > * {
   height: 5rem;
 }
 
@@ -79,4 +115,15 @@ h1, h2, h3, h4, h5, h6 {
 
 svg {
     stroke: #2c2c2c;
+}
+
+.nav-right {
+  margin-left: auto; 
+  margin-right: 0;
+  gap: 1.8rem;
+  padding-right: 0.8rem;
+}
+
+.header-on-dark {
+  color: white;
 }
