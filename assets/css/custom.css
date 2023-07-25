@@ -1,0 +1,82 @@
+html {
+    background-color: #FFFFFF;
+    color: #131313;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: #000000;
+}
+
+.sections a {
+    text-decoration: none;
+    border: 1px solid black;
+    border-radius: 3px;
+    padding: 8px;
+    margin: 8px;
+}
+
+.section-h3 {
+  font-size: 1.4rem;
+  font-weight: 600;
+}
+
+.section-h4 {
+  font-size: 0.8rem;
+}
+
+.sections > * > * a {
+    color: white;
+    background-color: #12127d;
+    border: none;
+}
+
+.section-locations a {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+  color: white;
+  padding: 0.7rem;
+}
+
+.sections > * > * a svg {
+  stroke: white;
+}
+
+.navigation-bar, .navigation-bar :link, .navigation-bar :visited {
+  color: #FFFFFF;
+  background-color: #12127d;
+}
+.navigation-bar svg {
+    stroke: #FFFFFF;
+    stroke-width: 0.08rem;
+}
+
+.navigation-bar {
+  height: 6rem;
+}
+
+.navigation-bar > * {
+  height: 5rem;
+}
+
+.navigation-bar > :first-child > * {
+  width: 5rem;
+}
+
+.sections {
+
+}
+
+/* Section */
+.sections > * {
+
+}
+
+/* Block */
+.sections > * > * {
+
+}
+
+svg {
+    stroke: #2c2c2c;
+}

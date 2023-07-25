@@ -1,0 +1,10 @@
+name: PNL Storage
+title: PNL Storage
+description: >- # this means to ignore newlines until the next yaml key
+  Peter Dougherty's services include storage buildings, tiny homes, concrete, custom farming, dams, dozer work, fencing, hay baling, hay sales, metal buildings and barns, pipeline reclamation, sprigging, terraces, tree clearing, and so much more!
+color: "#12127d"
+background_color: "#FFFFFF"
+logo: "assets/img/logo.png"
+apple_mask_icon: "assets/img/apple-mask-icon.svg"
+themed_mask_icon: "assets/img/themed-mask-icon.png"
+sharing_image: "assets/photos/redCabin.jpg"
