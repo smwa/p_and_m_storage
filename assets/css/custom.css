@@ -130,3 +130,9 @@ svg {
 .header-on-dark {
   color: white;
 }
+
+
+/* Handle build pages */
+#ir-logo-bar, #location-dialog, .ir-EmailQuoteButtons-root {
+  display: none !important;
+}
