@@ -8,20 +8,16 @@ layout: default
     {% include picture.html url='assets/photos/woodBuildingsExteriors/redCabin.jpg' title='Red Cabin' %}
     <div>
       <a href="https://goo.gl/maps/RTuVvjx5waeYZFQG6" class="center-content">
-          <i data-feather="map-pin"></i>
           <div class="section-h3">Calumet, Oklahoma</div>
           <div class="section-h4">564 S. Calumet Road, Calument, Oklahoma 73014</div>
       </a>
       <a href="https://goo.gl/maps/KGZMpM2VyKxeQiZa9" class="center-content">
-          <i data-feather="map-pin"></i>
           <div class="section-h3">Weatherford, Oklahoma</div>
           <div class="section-h4">2907 E. Main Street, Weatherford, Oklahoma 73096</div>
       </a>
     </div>
   </div>
-</div>
 
-<div>
   <div>
     <div>
       <a href="tel:4057882393" class="center-content">
@@ -48,22 +44,47 @@ layout: default
   </div>
 </div>
 
-<a href="/slideshow/wood/">
+
+<!-- Desktop slideshows -->
+<a href="/slideshow/wood/" class="hide-on-mobile">
   {% include picture.html url='assets/photos/woodBuildingsExteriors/316815107_196066436318262_5728505603133179146_n.jpg' title='Wooden Storage Building' %}
   <h2>Storage Buildings</h2>
 </a>
-
-<a href="/slideshow/tinyhomes/">
+<a href="/slideshow/tinyhomes/" class="hide-on-mobile">
   <h2>Tiny Homes</h2>
   {% include picture.html url='assets/photos/interiors/273808929_109716964966492_1257565072509379129_n.jpg' title='Inside a Hunting Cabin' %}
 </a>
-
-<a href="/slideshow/metal/">
+<a href="/slideshow/metal/" class="hide-on-mobile">
   {% include picture.html url='assets/photos/metalBuildings/306794345_179504934641079_8535974952308255770_n.jpg' title='A large metal building' %}
   <h2>Metal Buildings</h2>
 </a>
+<a href="/slideshow/more/" class="hide-on-mobile">
+  <div>
+    {% include picture.html url='assets/photos/misc/combined.jpg' title='Hunting Blind' %}
+    <h1 class="header-on-dark">And so much more</h1>
+  </div>
+</a>
 
-<a href="/slideshow/more/">
+<!-- Mobile slideshows -->
+<a href="/slideshow/wood/" class="hide-on-desktop">
+  <div>
+    {% include picture.html url='assets/photos/woodBuildingsExteriors/316815107_196066436318262_5728505603133179146_n.jpg' title='Wooden Storage Building' %}
+    <h1 class="header-on-dark">Storage Buildings</h1>
+  </div>
+</a>
+<a href="/slideshow/tinyhomes/" class="hide-on-desktop">
+  <div>
+    {% include picture.html url='assets/photos/interiors/273808929_109716964966492_1257565072509379129_n.jpg' title='Inside a Hunting Cabin' %}
+    <h1 class="header-on-dark">Tiny Homes</h1>
+  </div>
+</a>
+<a href="/slideshow/metal/" class="hide-on-desktop">
+  <div>
+    {% include picture.html url='assets/photos/metalBuildings/306794345_179504934641079_8535974952308255770_n.jpg' title='A large metal building' %}
+    <h1 class="header-on-dark">Metal Buildings</h1>
+  </div>
+</a>
+<a href="/slideshow/more/" class="hide-on-desktop">
   <div>
     {% include picture.html url='assets/photos/misc/combined.jpg' title='Hunting Blind' %}
     <h1 class="header-on-dark">And so much more</h1>

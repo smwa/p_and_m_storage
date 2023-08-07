@@ -109,15 +109,9 @@ svg {
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: white;
+    background-color: black;
     z-index: -1;
     opacity: 0.4;
-}
-
-@media (prefers-color-scheme: dark) {
-    .sections > * > * > img + *::after {
-        background-color: black;
-    }
 }
 
 .center-content {
@@ -152,5 +146,10 @@ svg {
         padding-right: 2rem;
         width: calc(100% - 4rem);
         flex-direction: row;
+    }
+
+    .sections > * {
+      margin-right: 8rem;
+      margin-left: 8rem;
     }
 }

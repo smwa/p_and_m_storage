@@ -3,17 +3,21 @@ html {
     color: #131313;
 }
 
-.navigation-bar, body {
-  margin-bottom: 1rem;
-}
-
 h1, h2, h3, h4, h5, h6 {
     color: #000000;
+}
+
+.sections h1, .sections h2, .sections h3, .sections h4, .sections h5, .sections h6 {
+  margin: 0;
 }
 
 .sections a {
   color: black;
   text-decoration: none;
+}
+
+.sections a h1, .sections a h2, .sections a h3 {
+  text-decoration: underline;
 }
 
 .sections > * a {
@@ -36,21 +40,6 @@ h1, h2, h3, h4, h5, h6 {
     color: white;
     background-color: #12127d;
     border: none;
-}
-
-.section-options a {
-  color: white;
-  text-decoration: none;
-  border: none;
-  background-color: initial;
-  font-weight: 800;
-  font-size: 2rem;
-  padding: 0.2rem;
-  margin: 0;
-}
-
-.section-options > * > img + *::after {
-  opacity: 0.6;
 }
 
 .section-locations a {
@@ -101,20 +90,6 @@ h1, h2, h3, h4, h5, h6 {
 
 .navigation-bar > :first-child > * {
   width: 5rem;
-}
-
-.sections {
-
-}
-
-/* Section */
-.sections > * {
-
-}
-
-/* Block */
-.sections > * > * {
-
 }
 
 svg {
