@@ -21,6 +21,7 @@ plugins:
   - jekyll-target-blank
   - jekyll-webp
   - jekyll-remove-file-extension
+  - jekyll-resize
 
 defaults:
   - scope:
@@ -29,6 +30,10 @@ defaults:
       asset: true
   - scope:
       path: "lib"
+    values:
+      asset: true
+  - scope:
+      path: "cache"
     values:
       asset: true
 
