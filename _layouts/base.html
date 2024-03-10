@@ -59,11 +59,6 @@
     <script src="{{ 'lib/splide/js/splide-extension-url-hash.min.js' | relative_url }}"></script>
     <script>
       feather.replace();
-      {% if jekyll.environment != "development" %}
-        if ('serviceWorker' in navigator) {
-          // navigator.serviceWorker.register("{{ 'service-worker.js' | relative_url }}");
-        }
-      {% endif %}
       
       let initialSlideIncounter = 0;
       Array.from(document.querySelectorAll('.sections > *')).forEach((el, elIndex) => {
@@ -96,7 +91,7 @@
   (function() {
     var u="//mat.mechstack.dev/";
     _paq.push(['setTrackerUrl', u+'matomo.php']);
-    _paq.push(['setSiteId', '3']);
+    _paq.push(['setSiteId', '8']);
     var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
     g.async=true; g.src=u+'matomo.js'; s.parentNode.insertBefore(g,s);
   })();
