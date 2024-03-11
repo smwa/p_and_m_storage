@@ -44,8 +44,8 @@ let sendToDealerStep = -1;
 setInterval(() => {
   if (sendToDealerStep < 0 || sendToDealerStep > 3) return;
   if (sendToDealerStep === 0) {
-    if (!document.getElementById('open-share-dialog-btn')) return;
-    document.getElementById('open-share-dialog-btn').click();
+    if (!document.querySelector('#open-share-dialog-btn.MuiButton-root')) return;
+    document.querySelector('#open-share-dialog-btn.MuiButton-root').click();
     sendToDealerStep = 1;
   }
   if (sendToDealerStep === 1) {
@@ -62,7 +62,7 @@ setInterval(() => {
     if (!e) return;
 
     // const dealer_address = 'test@mechstack.dev';
-    const dealer_address = 'pnlstoragebuildings@yahoo.com';
+    const dealer_address = 'pandmoutdoorstructures@mechstack.dev';
     setNativeValue(e, dealer_address);
 
     e.parentElement.parentElement.style.height = '0';

@@ -1,92 +1,103 @@
 ---
 permalink: /
-layout: sectioned
+layout: default
 ---
 
-<div class="section-locations">
-  <div>
-    {% include picture.html url='assets/photos/woodBuildingsExteriors/redCabin.jpg' title='Red Cabin' %}
-    <div>
-      <a href="https://goo.gl/maps/RTuVvjx5waeYZFQG6" class="center-content">
-          <div class="section-h3">Calumet, Oklahoma</div>
-          <div class="section-h4">564 S. Calumet Road, Calument, Oklahoma 73014</div>
-      </a>
-      <a href="https://goo.gl/maps/KGZMpM2VyKxeQiZa9" class="center-content">
-          <div class="section-h3">Weatherford, Oklahoma</div>
-          <div class="section-h4">2907 E. Main Street, Weatherford, Oklahoma 73096</div>
-      </a>
-    </div>
-  </div>
-
-  <div>
-    <div>
-      <a href="tel:4057882393" class="center-content">
-        <i data-feather="phone"></i>
-        (405) 788-2393
-      </a>
-      <a href="mailto:pnlstoragebuildings@yahoo.com" class="center-content">
-        <i data-feather="mail"></i>
-        pnlstoragebuildings@yahoo.com
-      </a>
-    </div>
+<div class="hero-image">
+  <div class="hero-overlay"></div>
+  <div class="hero-content">
+    <h1>We're Here For Your Tiny Home and Storage Building Needs</h1>
   </div>
 </div>
 
-<div>
-  <div>
-    {% include picture.html url='assets/photos/metalBuildings/360128884_297708939487344_7486151275152916537_n.jpg' title='Metal Building Finished' %}
+<div class="sections" role="main">
+
+  <div class="section-locations">
     <div>
-      <a href="/build/" class="center-content">
-        <i data-feather="tool"></i>
-        Customize Your Own Building
-      </a>
+      {% include picture.html url='assets/photos/woodBuildingsExteriors/redCabin.jpg' title='Red Cabin' %}
+      <div>
+        <a href="https://maps.app.goo.gl/oQV1A3ATrroKzikH9" class="center-content">
+            <div class="section-h3">Alexandria, Alabama</div>
+            <div class="section-h4">6790 U.S. Hwy 431, Alexandria, AL 36250</div>
+        </a>
+        <a href="https://maps.app.goo.gl/8p626ed2wWovU8en9" class="center-content">
+            <div class="section-h3">Oxford, Alabama</div>
+            <div class="section-h4">1909 US Hwy 78 E, Oxford, AL 36203</div>
+        </a>
+      </div>
+    </div>
+
+    <div>
+      <div>
+        <a href="tel:2563905561" class="center-content">
+          <i data-feather="phone"></i>
+          (256) 390-5561
+        </a>
+        <a href="mailto:www.plagunter32@yahoo.com" class="center-content">
+          <i data-feather="mail"></i>
+          www.plagunter32@yahoo.com
+        </a>
+      </div>
     </div>
   </div>
+
+  <div>
+    <div>
+      {% include picture.html url='assets/photos/metalBuildings/360128884_297708939487344_7486151275152916537_n.jpg' title='Metal Building Finished' %}
+      <div>
+        <a href="/build/" class="center-content">
+          <i data-feather="tool"></i>
+          Choose Your New Building
+        </a>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- Desktop slideshows -->
+  <a href="/slideshow/tinyhomes/" class="hide-on-mobile">
+    <h2>Tiny Homes</h2>
+    {% include picture.html url='assets/photos/tinyHomes/273808929_109716964966492_1257565072509379129_n.jpg' title='Finished Out Tiny Home' %}
+  </a>
+  <a href="/slideshow/wood/" class="hide-on-mobile">
+    {% include picture.html url='assets/photos/woodBuildingsExteriors/316815107_196066436318262_5728505603133179146_n.jpg' title='Wood Storage Building' %}
+    <h2>Wood Buildings</h2>
+  </a>
+  <a href="/slideshow/metal/" class="hide-on-mobile">
+    <h2>Metal Buildings</h2>
+    {% include picture.html url='assets/photos/metalBuildings/306794345_179504934641079_8535974952308255770_n.jpg' title='Metal Building' %}
+  </a>
+  <a href="/slideshow/carport/" class="hide-on-mobile">
+    <div>
+      {% include picture.html url='assets/photos/carports/combined.jpg' title='Carport' %}
+      <h1 class="header-on-dark">Carports and Garages</h1>
+    </div>
+  </a>
+
+  <!-- Mobile slideshows -->
+  <a href="/slideshow/tinyhomes/" class="hide-on-desktop">
+    <div>
+      {% include picture.html url='assets/photos/tinyHomes/273808929_109716964966492_1257565072509379129_n.jpg' title='Finished Out Tiny Home' %}
+      <h1 class="header-on-dark">Tiny Homes</h1>
+    </div>
+  </a>
+  <a href="/slideshow/wood/" class="hide-on-desktop">
+    <div>
+      {% include picture.html url='assets/photos/woodBuildingsExteriors/316815107_196066436318262_5728505603133179146_n.jpg' title='Wood Storage Building' %}
+      <h1 class="header-on-dark">Wood Buildings</h1>
+    </div>
+  </a>
+  <a href="/slideshow/metal/" class="hide-on-desktop">
+    <div>
+      {% include picture.html url='assets/photos/metalBuildings/306794345_179504934641079_8535974952308255770_n.jpg' title='Metal Building' %}
+      <h1 class="header-on-dark">Metal Buildings</h1>
+    </div>
+  </a>
+  <a href="/slideshow/carport/" class="hide-on-desktop">
+    <div>
+      {% include picture.html url='assets/photos/carports/combined.jpg' title='Carport' %}
+      <h1 class="header-on-dark">Carports and Garages</h1>
+    </div>
+  </a>
+
 </div>
-
-
-<!-- Desktop slideshows -->
-<a href="/slideshow/wood/" class="hide-on-mobile">
-  {% include picture.html url='assets/photos/woodBuildingsExteriors/316815107_196066436318262_5728505603133179146_n.jpg' title='Wooden Storage Building' %}
-  <h2>Storage Buildings</h2>
-</a>
-<a href="/slideshow/tinyhomes/" class="hide-on-mobile">
-  <h2>Tiny Homes</h2>
-  {% include picture.html url='assets/photos/interiors/273808929_109716964966492_1257565072509379129_n.jpg' title='Inside a Hunting Cabin' %}
-</a>
-<a href="/slideshow/metal/" class="hide-on-mobile">
-  {% include picture.html url='assets/photos/metalBuildings/306794345_179504934641079_8535974952308255770_n.jpg' title='A large metal building' %}
-  <h2>Metal Buildings</h2>
-</a>
-<a href="/slideshow/more/" class="hide-on-mobile">
-  <div>
-    {% include picture.html url='assets/photos/misc/combined.jpg' title='Hunting Blind' %}
-    <h1 class="header-on-dark">And so much more</h1>
-  </div>
-</a>
-
-<!-- Mobile slideshows -->
-<a href="/slideshow/wood/" class="hide-on-desktop">
-  <div>
-    {% include picture.html url='assets/photos/woodBuildingsExteriors/316815107_196066436318262_5728505603133179146_n.jpg' title='Wooden Storage Building' %}
-    <h1 class="header-on-dark">Storage Buildings</h1>
-  </div>
-</a>
-<a href="/slideshow/tinyhomes/" class="hide-on-desktop">
-  <div>
-    {% include picture.html url='assets/photos/interiors/273808929_109716964966492_1257565072509379129_n.jpg' title='Inside a Hunting Cabin' %}
-    <h1 class="header-on-dark">Tiny Homes</h1>
-  </div>
-</a>
-<a href="/slideshow/metal/" class="hide-on-desktop">
-  <div>
-    {% include picture.html url='assets/photos/metalBuildings/306794345_179504934641079_8535974952308255770_n.jpg' title='A large metal building' %}
-    <h1 class="header-on-dark">Metal Buildings</h1>
-  </div>
-</a>
-<a href="/slideshow/more/" class="hide-on-desktop">
-  <div>
-    {% include picture.html url='assets/photos/misc/combined.jpg' title='Hunting Blind' %}
-    <h1 class="header-on-dark">And so much more</h1>
-  </div>
-</a>
