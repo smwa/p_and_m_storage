@@ -4,7 +4,7 @@
 
       {% for image in include.image_list %}
 
-        <li class="splide__slide" data-splide-hash="{{ 'untitled-' | append: forloop.index }}"></li>
+        <li class="splide__slide"></li>
 
           <div class="art-carousel__slide">
             {% capture fullpath %}{{ site.baseurl }}/{{ include.image_root }}{{ image }}{% endcapture %}
