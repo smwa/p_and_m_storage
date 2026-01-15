@@ -75,7 +75,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .sections > * > * a {
     color: white;
-    background-color: #8a784a;
+    background-color: #c80a0b;
     border: none;
 }
 
@@ -92,8 +92,13 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .navigation-bar, .navigation-bar :link, .navigation-bar :visited {
-  color: #FFFFFF;
-  background-color: #8a784a;
+  color: #000000;
+  background-color: #FFFFFF;
+  font-size: 1.5rem;
+}
+
+.navigation-bar .nav-right a svg {
+  stroke: #000000;
 }
 
 .nav-right > * {
@@ -103,9 +108,9 @@ h1, h2, h3, h4, h5, h6 {
   align-items: center;
   justify-content: center;
   text-decoration: none;
-  font-size: 1.5rem;
   font-weight: 500;
   white-space: nowrap;
+  font-size: 1.2rem !important;
 }
 
 .nav-right > * > * {
@@ -115,34 +120,36 @@ h1, h2, h3, h4, h5, h6 {
 .navigation-bar svg {
     stroke: #FFFFFF;
     stroke-width: 0.08rem;
+    height: 3rem;
+    width: auto;
+    padding: 0;
 }
 
 .navigation-bar {
-  height: 4rem;
+  height: auto;
+  gap: 0;
+  flex-wrap: wrap;
 }
 
 .navigation-bar > *, .nav-right > * {
-  height: 3rem;
+  height: 4rem;
 }
 
 .navigation-bar > :first-child > * {
-  width: 3rem;
+  width: 4rem;
 }
 
 .navigation-bar > :first-child {
   display: flex;
   flex-direction: row;
-  gap: 1rem;
-}
-
-svg {
-    stroke: #2c2c2c;
+  gap: 0.3rem;
+  margin-right: auto;
 }
 
 .nav-right {
-  margin-left: auto; 
+  margin-left: 0; 
   margin-right: 0;
-  gap: 1.2rem;
+  padding: 0;
 }
 
 .header-on-dark {

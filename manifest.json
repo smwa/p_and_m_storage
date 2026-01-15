@@ -27,3 +27,4 @@
   "theme_color": "{{ site.data.site.color }}",
   "description": "{{ site.data.site.description }}"
 }
+ 
