@@ -19,7 +19,6 @@ GEM
       http_parser.rb (~> 0)
     eventmachine (1.2.7)
     ffi (1.17.2-x86_64-linux-gnu)
-    fileutils (1.7.2)
     forwardable-extended (2.6.0)
     google-protobuf (4.33.2-x86_64-linux-gnu)
       bigdecimal
@@ -43,10 +42,6 @@ GEM
       safe_yaml (~> 1.0)
       terminal-table (>= 1.8, < 4.0)
       webrick (~> 1.7)
-    jekyll-minimagick (0.0.4)
-      jekyll (>= 0.10.0)
-      mini_magick (>= 3.3)
-    jekyll-regex-replace (1.1.0)
     jekyll-remove-file-extension (1.0.0)
     jekyll-sass-converter (3.1.0)
       sass-embedded (~> 1.75)
@@ -94,16 +89,12 @@ PLATFORMS
   x86_64-linux
 
 DEPENDENCIES
-  fileutils
-  jekyll (~> 4.3.0)
-  jekyll-minimagick
-  jekyll-regex-replace
+  jekyll (~> 4.3)
   jekyll-remove-file-extension
   jekyll-resize!
   jekyll-target-blank
   jekyll-webp (~> 1.0)
-  mini_magick
-  tzinfo (~> 1.2)
+  tzinfo (>= 1, < 3)
   tzinfo-data
   wdm (~> 0.1.1)
   webrick (~> 1.8)
