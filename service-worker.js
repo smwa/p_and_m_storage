@@ -14,8 +14,8 @@
 // Names of the two caches used in this version of the service worker.
 // Change to v2, etc. when you update any of the local resources, which will
 // in turn trigger the install event again.
-const PRECACHE = "precache-20260511153409+0000";
-const RUNTIME = "runtime-20260511153409+0000";
+const PRECACHE = "precache-20260706163803+0000";
+const RUNTIME = "runtime-20260706163803+0000";
 
 // A list of local resources we always want to be cached.
 const PRECACHE_URLS = [
@@ -606,9 +606,9 @@ const PRECACHE_URLS = [
   
     './slideshow/wood/',
   
-    './slideshow/metal/',
-  
     './slideshow/tinyhomes/',
+  
+    './slideshow/metal/',
   
     './build/tn-steel/',
   
